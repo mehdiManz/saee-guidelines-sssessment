@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: lightblue;
+}
+/* Default font size */
+.quiz-form {
+    font-size: 16px;
+    
+  }
+  
+  /* Media query for smaller screens like mobile */
+  @media screen and (max-width: 600px) {
+    .quiz-form {
+      font-size: 14px;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    .quiz-form {
+      font-size: 12px;
+    }   
+
+}
+/* Submit button style */
+.submit-button {
+    background-color: #3682f4; /* Red background color */
+    color: #FFFFFF; /* White text color */
+    border: none; /* Remove border */
+    padding: 12px 24px; /* Add padding */
+    text-align: center; /* Center align text */
+    font-size: 18px; /* Font size */
+    cursor: pointer; /* Add cursor pointer on hover */
+    border-radius: 4px; /* Add border radius */
+  }
+  
+  /* Reset button style */
+  .reset-button {
+    background-color: #4CAF50; /* Green background color */
+   
+    color: #FFFFFF; /* White text color */
+    border: none; /* Remove border */
+    padding: 12px 24px; /* Add padding */
+    text-align: center; /* Center align text */
+    font-size: 18px; /* Font size */
+    cursor: pointer; /* Add cursor pointer on hover */
+    border-radius: 4px; /* Add border radius */
+  }
+  
+  /* Style for button hover effect */
+  .submit-button:hover, .reset-button:hover {
+    opacity: 0.8; /* Reduce opacity on hover for an effect */
+  }
+
+
+  
+  

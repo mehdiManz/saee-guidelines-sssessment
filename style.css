@@ -1,59 +1,118 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    align-items: center;
-    justify-content: center;
-    background-color: lightblue;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  background-color: lightblue;
 }
+
 /* Default font size */
 .quiz-form {
-    font-size: 16px;
-    
-  }
-  
-  /* Media query for smaller screens like mobile */
-  @media screen and (max-width: 600px) {
-    .quiz-form {
-      font-size: 14px;
-    }
-  }
-  
-  @media screen and (max-width: 400px) {
-    .quiz-form {
-      font-size: 12px;
-    }   
-
+  font-size: 16px;
 }
+
+/* Media query for smaller screens like mobile */
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 16px; /* Increase body font size for better readability */
+  }
+
+  .quiz-form {
+    font-size: 14px;
+  }
+
+  /* Update padding and font size for better readability on mobile */
+  .quiz-form h2 {
+    font-size: 18px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+  }
+
+  .quiz-form p {
+    font-size: 16px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+
+  .quiz-form input[type="radio"] {
+    margin-bottom: 8px;
+  }
+
+  .submit-button,
+  .reset-button {
+    font-size: 16px; /* Reduce button font size for better fit on mobile */
+    padding: 10px 20px; /* Reduce padding for better fit on mobile */
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .quiz-form {
+    font-size: 12px;
+  }
+
+  /* Update padding and font size for better readability on smaller screens */
+  .quiz-form h2 {
+    font-size: 16px;
+    margin-top: 16px;
+    margin-bottom: 8px;
+  }
+
+  .quiz-form p {
+    font-size: 14px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+
+  .submit-button,
+  .reset-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
 /* Submit button style */
 .submit-button {
-    background-color: #3682f4; /* Red background color */
-    color: #FFFFFF; /* White text color */
-    border: none; /* Remove border */
-    padding: 12px 24px; /* Add padding */
-    text-align: center; /* Center align text */
-    font-size: 18px; /* Font size */
-    cursor: pointer; /* Add cursor pointer on hover */
-    border-radius: 4px; /* Add border radius */
-  }
-  
-  /* Reset button style */
-  .reset-button {
-    background-color: #4CAF50; /* Green background color */
-   
-    color: #FFFFFF; /* White text color */
-    border: none; /* Remove border */
-    padding: 12px 24px; /* Add padding */
-    text-align: center; /* Center align text */
-    font-size: 18px; /* Font size */
-    cursor: pointer; /* Add cursor pointer on hover */
-    border-radius: 4px; /* Add border radius */
-  }
-  
-  /* Style for button hover effect */
-  .submit-button:hover, .reset-button:hover {
-    opacity: 0.8; /* Reduce opacity on hover for an effect */
-  }
+  background-color: #3682f4;
+  /* Red background color */
+  color: #ffffff;
+  /* White text color */
+  border: none;
+  /* Remove border */
+  padding: 12px 24px;
+  /* Add padding */
+  text-align: center;
+  /* Center align text */
+  font-size: 18px;
+  /* Font size */
+  cursor: pointer;
+  /* Add cursor pointer on hover */
+  border-radius: 4px;
+  /* Add border radius */
+}
 
+/* Reset button style */
+.reset-button {
+  background-color: #4caf50;
+  /* Green background color */
+  color: #ffffff;
+  /* White text color */
+  border: none;
+  /* Remove border */
+  padding: 12px 24px;
+  /* Add padding */
+  text-align: center;
+  /* Center align text */
+  font-size: 18px;
+  /* Font size */
+  cursor: pointer;
+  /* Add cursor pointer on hover */
+  border-radius: 4px;
+  /* Add border radius */
+}
 
-  
-  
+/* Style for button hover effect */
+.submit-button:hover,
+.reset-button:hover {
+  opacity: 0.8;
+  /* Reduce opacity on hover for an effect */
+}

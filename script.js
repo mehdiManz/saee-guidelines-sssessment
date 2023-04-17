@@ -19,7 +19,16 @@ function checkAnswers() {
     "d",
     "c",
     "d",
+    "b",
+    "a",
+    "d",
+    
   ]; 
+    
+    
+    
+
+    
 
   // We use a for loop to iterate through each question in the quiz.n
   //The loop starts from 1 and goes up to the total number of questions in correctAnswers.length.
@@ -48,13 +57,18 @@ function checkAnswers() {
       document.getElementById("result").style.fontWeight = "bold"; // Set font weight to bold
       document.getElementById("result").style.color = "green"; // Set text color to green
       document.body.style.backgroundColor = "lightgreen"; // Set background color to light green
+
+  
+
+
+
   } else {
     document.getElementById("result").innerHTML =
       "Sorry, you did not pass the quiz. Your score is " +
       score + "/" + totalQuestions + " (" + Math.round((score/totalQuestions)*100) + "%)";
       document.getElementById("result").style.fontWeight = "bold"; // Set font weight to bold
-  document.getElementById("result").style.color = "red"; // Set text color to red
-  document.body.style.backgroundColor = "lightcoral"; // Set background color to light red
+  document.getElementById("result").style.color = "black"; // Set text color to red
+  
   }
 
   // Disable quiz form input options (radio buttons or checkboxes)

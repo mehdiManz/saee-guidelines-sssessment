@@ -61,7 +61,7 @@ body {
 /* Define media query for mobile devices */
 @media (max-width: 767px) {
   /* Styles for mobile devices go here */
-  input[type="radio"][value="b"] {
+  input[type="radio"] {
     font-size: 18px;
     }
 }

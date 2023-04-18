@@ -7,25 +7,24 @@ body {
   height: 3800px;
 }
 
+p {
+  font-weight: bold;
+}
+input{
+  width: 30px;
+  height: 30px;
+}
+
+
+
 /* Default font size */
 .quiz-form {
   font-size: 16px;
-  padding: 20px; /* Add padding for better spacing on mobile */
+  padding: 20px;
+  /* Add padding for better spacing on mobile */
 }
 
-/* Media query for smaller screens like mobile */
-@media screen and (max-width: 600px) {
-  .quiz-form {
-      font-size: 18px; /* Increase font size for better readability on mobile */
-  }
-}
 
-/* Media query for even smaller screens like small smartphones */
-@media screen and (max-width: 400px) {
-  .quiz-form {
-      font-size: 16px; /* Further increase font size for smaller screens */
-  }
-}
 
 /* Submit button style */
 .submit-button {
@@ -52,6 +51,10 @@ body {
   border-radius: 4px;
 }
 
+label {
+  width: 30px;
+}
+
 /* Style for button hover effect */
 .submit-button:hover,
 .reset-button:hover {
@@ -59,11 +62,20 @@ body {
 }
 
 @media only screen and (max-width: 757px) {
-  label{
+  label {
     font-size: 30px;
-
+   
   }
-  body{
+
+  body {
     height: 3000px;
   }
+  
 }
+  
+ 
+  
+
+
+
+

@@ -58,17 +58,12 @@ body {
   opacity: 0.8;
 }
 
-/* Define media query for mobile devices */
-@media (max-width: 767px) {
-  /* Styles for mobile devices go here */
-  
-  
-   p {
+@media only screen and (max-width: 757px) {
+  label{
     font-size: 30px;
-   }
-   div{
-    font-size: 30px;
-   }
-   
-}
 
+  }
+  body{
+    height: 3000px;
+  }
+}

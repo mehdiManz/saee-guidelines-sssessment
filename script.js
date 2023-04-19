@@ -67,7 +67,7 @@ function checkAnswers() {
       "Sorry, you did not pass the quiz. Your score is " +
       score + "/" + totalQuestions + " (" + Math.round((score / totalQuestions) * 100) + "%)";
     document.getElementById("result").style.fontWeight = "bold"; // Set font weight to bold
-    document.getElementById("result").style.color = "black"; // Set text color to red
+//     document.getElementById("result").style.color = "black"; // Set text color to red
     document.getElementById("result").style.backgroundColor = "red";
 
 

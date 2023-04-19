@@ -23,7 +23,7 @@
       <input type="radio" name="q1" value="b" />b) Up to 3 minutes<br />
       <input type="radio" name="q1" value="c" />c) Up to 1 minute<br />
       <input type="radio" name="q1" value="d" />d) Between 4 to 5 minutes<br />
-      </>
+      </label>
 
       <hr />
       <h2>Question 2</h2>
@@ -162,7 +162,8 @@
         <input type="radio" name="q11" value="d" />d) Ignore their return and
         continue with the next speaker<br />
       </label>
-      <hr /) <!-- Question 12 -->
+      <hr />
+      <!-- < /) Question 12 -->
       <h2>Question 12</h2>
       <p>
         As a moderator in Smart & Easy English Clubhouse, what should you do if
@@ -257,7 +258,7 @@
       <h2>Question 17</h2>
       <p>
         Why is it important for moderators to install a
-        <strong>floating timer</strong> floating timer on their smartphone for
+         floating timer on their smartphone for
         timekeeping during a task?
       </p>
       <label>
@@ -284,16 +285,18 @@
           social media<br />
           <input type="radio" name="q18" value="b" />b) To limit the number of
           notifications received<br />
-          <input type="radio" name="q18" value="d" />d) To keep track of time
+          <input type="radio" name="q18" value="d" />d)To keep track of time
           during conversations and avoid exceeding the 4-5 minute time limit<br />
           <input type="radio" name="q18" value="e" />e) To enhance the visual
           appearance of the smartphone<br />
 
         </label>
 
-
+     <div class="bottom-div" >
 
         <p id="result"></p>
+      </div>
+        <div class="reset-submit-btns">
 
         <br />
         <!-- Submit button with custom CSS class -->
@@ -301,6 +304,11 @@
 
         <!-- Reset button with custom CSS class -->
         <input type="button" value="Reset" onclick="resetQuiz()" class="reset-button" />
+        <!-- <button type="submit" class="btn-submit">Submit</button>
+        <button type="reset" class="btn-reset">Reset</button> -->
+        </div>
+      
+        
   </form>
 
   <script src="script.js"></script>

@@ -10,12 +10,10 @@ body {
 p {
   font-weight: bold;
 }
-input{
-  width: 30px;
-  height: 30px;
+input {
+  width: 25px;
+  height: 25px;
 }
-
-
 
 /* Default font size */
 .quiz-form {
@@ -23,32 +21,52 @@ input{
   padding: 20px;
   /* Add padding for better spacing on mobile */
 }
-
-
+.reset-submit-btns {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.bottom-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
 
 /* Submit button style */
 .submit-button {
   background-color: #3682f4;
-  color: #FFFFFF;
+  color: #ffffff;
   border: none;
   padding: 12px 24px;
   text-align: center;
-  font-size: 18px;
+  font-size: 25px;
   cursor: pointer;
   border-radius: 4px;
-  margin-right: 35px;
+  margin-right: 50px;
+  width: auto;
+  height: auto;
+  padding: 50px 65px;
+  font-weight: bold;
 }
 
 /* Reset button style */
 .reset-button {
-  background-color: #4CAF50;
-  color: #FFFFFF;
+  background-color: #4caf50;
+  color: #ffffff;
   border: none;
   padding: 12px 24px;
   text-align: center;
-  font-size: 18px;
+  font-size: 25px;
   cursor: pointer;
   border-radius: 4px;
+  width: auto;
+  height: auto;
+  padding: 50px 65px;
+  font-weight: bold;
 }
 
 label {
@@ -64,18 +82,10 @@ label {
 @media only screen and (max-width: 757px) {
   label {
     font-size: 30px;
-   
   }
 
   body {
     height: 3000px;
   }
-  
 }
-  
- 
-  
-
-
-
 

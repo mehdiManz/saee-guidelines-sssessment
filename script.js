@@ -1,6 +1,6 @@
 //Let's go through the checkAnswers() function step by step:
 function checkAnswers() {
-    //First, we declare a variable score and initialize it to 0. This variable will keep track of the number of correct answers.
+  //First, we declare a variable score and initialize it to 0. This variable will keep track of the number of correct answers.
   var score = 0;
   ///We create an array correctAnswers that stores the correct answers for each question in the quiz.
   var correctAnswers = [
@@ -22,13 +22,13 @@ function checkAnswers() {
     "b",
     "a",
     "d",
-    
-  ]; 
-    
-    
-    
 
-    
+  ];
+
+
+
+
+
 
   // We use a for loop to iterate through each question in the quiz.n
   //The loop starts from 1 and goes up to the total number of questions in correctAnswers.length.
@@ -46,29 +46,31 @@ function checkAnswers() {
   var passPercentage = 75;
   var passScore = (passPercentage / 100) * totalQuestions;
 
- 
-  
+
+
   var passScore = Math.round((passPercentage / 100) * totalQuestions);
 
   if (score >= passScore) {
     document.getElementById("result").innerHTML =
       "Congratulations! You passed the quiz with a score of " +
-      score + "/" + totalQuestions + " (" + Math.round((score/totalQuestions)*100) + "%)";
-      document.getElementById("result").style.fontWeight = "bold"; // Set font weight to bold
-      document.getElementById("result").style.color = "green"; // Set text color to green
-      document.body.style.backgroundColor = "lightgreen"; // Set background color to light green
+      score + "/" + totalQuestions + " (" + Math.round((score / totalQuestions) * 100) + "%)";
+    document.getElementById("result").style.fontWeight = "bold"; // Set font weight to bold
+    document.getElementById("result").style.color = "black"; // Set text color to green
+    document.body.style.backgroundColor = "lightgreen"; // Set background color to light green
 
-  
+
 
 
 
   } else {
     document.getElementById("result").innerHTML =
       "Sorry, you did not pass the quiz. Your score is " +
-      score + "/" + totalQuestions + " (" + Math.round((score/totalQuestions)*100) + "%)";
-      document.getElementById("result").style.fontWeight = "bold"; // Set font weight to bold
-  document.getElementById("result").style.color = "black"; // Set text color to red
-  
+      score + "/" + totalQuestions + " (" + Math.round((score / totalQuestions) * 100) + "%)";
+    document.getElementById("result").style.fontWeight = "bold"; // Set font weight to bold
+    document.getElementById("result").style.color = "black"; // Set text color to red
+    document.getElementById("result").style.backgroundColor = "red";
+
+
   }
 
   // Disable quiz form input options (radio buttons or checkboxes)
@@ -78,24 +80,24 @@ function checkAnswers() {
       formElements[i].disabled = true;
     }
   }
-  
+
 }
+
 function resetBackgroundColor() {
-    document.body.style.backgroundColor = ""; // Reset background color
-  }
-  
+  document.body.style.backgroundColor = ""; // Reset background color
+}
+
 
 function resetQuiz() {
-    // Enable quiz form input options (radio buttons or checkboxes)
-    var formElements = document.forms["quizForm"].elements;
-    for (var i = 0; i < formElements.length; i++) {
-      if (formElements[i].type === "radio" || formElements[i].type === "checkbox") {
-        formElements[i].disabled = false;
-        resetBackgroundColor(); // Reset background color
-      }
+  // Enable quiz form input options (radio buttons or checkboxes)
+  var formElements = document.forms["quizForm"].elements;
+  for (var i = 0; i < formElements.length; i++) {
+    if (formElements[i].type === "radio" || formElements[i].type === "checkbox") {
+      formElements[i].disabled = false;
+      resetBackgroundColor(); // Reset background color
     }
-  
-    document.getElementById("result").innerHTML = "";
-    document.forms["quizForm"].reset();
   }
-  
+
+  document.getElementById("result").innerHTML = "";
+  document.forms["quizForm"].reset();
+}

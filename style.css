@@ -88,4 +88,7 @@ label {
     height: 3000px;
   }
 }
-
+#result{
+  font-size: 45px ;
+  color: aliceblue;
+}

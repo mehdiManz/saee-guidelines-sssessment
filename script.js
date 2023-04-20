@@ -55,7 +55,7 @@ function checkAnswers() {
       "Congratulations! You passed the quiz with a score of " +
       score + "/" + totalQuestions + " (" + Math.round((score / totalQuestions) * 100) + "%)";
     document.getElementById("result").style.fontWeight = "bold"; // Set font weight to bold
-    document.getElementById("result").style.color = "black"; // Set text color to green
+    document.getElementById("result").style.color = "white"; // Set text color to green
     document.body.style.backgroundColor = "lightgreen"; // Set background color to light green
     document.getElementById("result").style.backgroundColor= "blue";
     

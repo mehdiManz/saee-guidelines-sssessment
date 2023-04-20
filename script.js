@@ -22,6 +22,7 @@ function checkAnswers() {
     "b",
     "a",
     "d",
+    "a"
 
   ];
 

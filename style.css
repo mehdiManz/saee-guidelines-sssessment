@@ -1,11 +1,30 @@
+
+
+
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
   align-items: center;
   justify-content: center;
   background-color: lightblue;
-  height: 3800px;
+  
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s, box-shadow 0.2s;
+  
+  
 }
+h1,h2,p{text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);}
+h1{
+  text-align: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+body > h2{
+  text-align: center;
+  font-size: smaller;
+}
+
 
 p {
   font-weight: bold;
@@ -25,6 +44,10 @@ input {
   display: flex;
   justify-content: center;
   text-align: center;
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); */
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+  
 }
 .bottom-div {
   display: flex;
@@ -71,6 +94,7 @@ input {
 
 label {
   width: 30px;
+ 
 }
 
 /* Style for button hover effect */
@@ -87,10 +111,13 @@ label {
   body {
     height: 3000px;
   }
+  
 }
 #result{
   font-size: 45px ;
   color: aliceblue;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+
 }
 hr {
   border: none;
@@ -98,4 +125,18 @@ hr {
   background-color: black;
   margin: 20px 0;
 }
+.submit-button:hover, .reset-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+}
+
+.submit-button:active, .reset-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+.bottom-div > p{
+  text-align: center;
+}
+
+
 

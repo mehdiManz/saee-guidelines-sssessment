@@ -101,9 +101,28 @@ function resetQuiz() {
     if (formElements[i].type === "radio" || formElements[i].type === "checkbox") {
       formElements[i].disabled = false;
       resetBackgroundColor(); // Reset background color
+      // document.querySelector("body > form > div > div.reset-submit-btns")
     }
   }
 
   document.getElementById("result").innerHTML = "";
   document.forms["quizForm"].reset();
+  // Scroll to the top of the page smoothly
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: 'smooth'
+  });
 }
+
+
+
+/////document.querySelector("body > form > h2:nth-child(2)")   first question element
+
+
+
+
+
+
+
+

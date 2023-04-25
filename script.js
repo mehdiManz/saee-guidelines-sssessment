@@ -56,6 +56,9 @@ function checkAnswers() {
     document.getElementById("result").innerHTML =
       "Congratulations! You passed the quiz with a score of " +
       score + "/" + totalQuestions + " (" + Math.round((score / totalQuestions) * 100) + "%)";
+
+      document.getElementById("result").classList.add("fade-in"); // Add fade-in class
+
     document.getElementById("result").style.fontWeight = "bold"; // Set font weight to bold
     document.getElementById("result").style.color = "white"; // Set text color to green
     document.body.style.backgroundColor = "lightgreen"; // Set background color to light green
@@ -71,6 +74,9 @@ function checkAnswers() {
     document.getElementById("result").innerHTML =
       "Sorry, you did not pass the quiz. Your score is " +
       score + "/" + totalQuestions + " (" + Math.round((score / totalQuestions) * 100) + "%).Review the guidelines before retaking the exam.";
+
+      document.getElementById("result").classList.add("fade-in"); // Add fade-in class
+
     document.getElementById("result").style.fontWeight = "bold"; // Set font weight to bold
     // document.getElementById("result").style.color = "black"; // Set text color to red
     document.getElementById("result").style.backgroundColor = "red";
@@ -78,6 +84,9 @@ function checkAnswers() {
 
 
   }
+   // Add animation to result element
+   var resultElement = document.getElementById("result");
+   resultElement.classList.add("fade-in");
 
   // Disable quiz form input options (radio buttons or checkboxes)
   var formElements = document.forms["quizForm"].elements;
@@ -95,6 +104,11 @@ function resetBackgroundColor() {
 
 
 function resetQuiz() {
+    // Remove the "fade-in" class from the result element
+    var resultElement = document.getElementById("result");
+    resultElement.classList.remove("fade-in");
+
+
   // Enable quiz form input options (radio buttons or checkboxes)
   var formElements = document.forms["quizForm"].elements;
   for (var i = 0; i < formElements.length; i++) {
@@ -114,6 +128,8 @@ function resetQuiz() {
     behavior: 'smooth'
   });
 }
+////////
+
 
 
 

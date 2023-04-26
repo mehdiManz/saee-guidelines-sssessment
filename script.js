@@ -21,8 +21,9 @@ function checkAnswers() {
     "d",
     "b",
     "a",
-    "d",
-    "a"
+    "b",
+    "a",
+    "c"
     
 
   ];

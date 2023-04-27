@@ -1,4 +1,30 @@
+
+function toggleDarkMode() {
+  var body = document.body;
+  var toggle = document.querySelector('.switch input[type="checkbox"]');
+  var icon = document.querySelector('.switch .slider');
+  
+  body.classList.toggle("dark-mode");
+  
+  if (body.classList.contains("dark-mode")) {
+    toggle.checked = true;
+    icon.classList.add("night-mode");
+  } else {
+    toggle.checked = false;
+    icon.classList.remove("night-mode");
+  }
+}
+
+
+
+
+
+
 //Let's go through the checkAnswers() function step by step:
+
+
+
+
 function checkAnswers() {
   //First, we declare a variable score and initialize it to 0. This variable will keep track of the number of correct answers.
   var score = 0;

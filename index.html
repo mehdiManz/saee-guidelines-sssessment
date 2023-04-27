@@ -3,16 +3,80 @@
 
 <head>
   <link rel="stylesheet" href="style.css" />
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  </head>
+  
   <title>Simple Quiz</title>
 </head>
 <style>
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin: 10px;
+}
 
+.switch input {
+  display: none;
+}
 
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 6px;
+}
+
+.slider i {
+  font-size: 20px;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.dark-mode {
+  background-color: #222;
+  color: #fff;
+}
+
+.fa-sun {
+  color: #f1c40f;
+}
+
+.fa-moon {
+  color: #f5f5f5;
+}
 
 
 </style>
 
 <body>
+  <div>
+    <label class="switch">
+      <input type="checkbox" onclick="toggleDarkMode()">
+      <span class="slider">
+        <i class="fas fa-sun"></i>
+        <i class="fas fa-moon"></i>
+      </span>
+    </label>
+    
+</div>
   <h1>Moderators Guidelines Assessment</h1>
   <h2>A minimum of 75% is needed to pass the exam.</h2>
   <form name="quizForm" class="quiz-form">

@@ -88,10 +88,11 @@ function checkAnswers() {
 
     document.getElementById("result").style.fontWeight = "bold"; // Set font weight to bold
     document.getElementById("result").style.color = "white"; // Set text color to green
-    document.body.style.backgroundColor = "lightgreen"; // Set background color to light green
-    document.getElementById("result").style.backgroundColor= "blue";
     
-   
+    
+    document.getElementById("result").style.backgroundColor= "#03C988";
+    
+    document.querySelector("body")
 
 
 
